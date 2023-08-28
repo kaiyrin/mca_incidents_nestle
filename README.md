@@ -10,11 +10,16 @@
 
 * So that, it has been enhanced compliance and incident management in Workstation Services by proposing actions to conduct long-term reviews of resolved tickets and identify common features in new tickets. Implemented a sustainable clustering solution to reduce a misclassification of incidents’ categories created by end users, leading to reducing the accumulation of long-term incidents across different categories. From now on, there is no need to add complicated classification surveys for end-users for precise understanding of application belonging to those incidents, which is crucial for identifying vendors working on this issue. This solution enables efficient grouping of related incidents and identification of potential incident series caused by common factors during ticket opening, leading to improved incident classification and resolution.
 
+ ## Methodology
 
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10
-
-
+  ### Language 
+ * R
+  ### Dataset 
+ *
+  ### Libraries 
+ *
+  ### Functions 
+ *
 ## Version History
 
 
