@@ -133,18 +133,9 @@ language_names <- c("spanish", "danish", "esperanto", "french", "polish", "indon
 latin_data <- incident_data[incident_data$lang %in% language_names, ]
 latin_data <- latin_data %>%
   filter(!grepl("^лицензия", description))
-latin_data <- latin_data %>%
-  filter(!grepl("^prime mp", description))
-latin_data <- latin_data %>%
-  filter(!grepl("^Yushan Lin", assigned_to))
 latin_data <- incident_data %>% filter(!grepl("zgc", as.character(description)))
 latin_data <- latin_data %>%
   filter(!grepl("^敬子 垣内", assigned_to))
-latin_data <- latin_data %>% filter(!grepl("@cn.nestle.com", caller_id))
-latin_data <- latin_data %>% filter(!grepl("@CN.nestle.com", caller_id))
-latin_data <- latin_data %>% filter(!grepl("@wyethnutrition.com", caller_id))
-latin_data <- latin_data %>% filter(!grepl("@wyethnutrition.com", caller_id))
-latin_data <- latin_data %>% filter(!grepl("@rd.nestle.com", caller_id))
 chinese_data <- incident_data %>% filter(lang %in% c("slovenian-iso8859_2", "slovak-ascii", "czech-iso8859_2", "nepali"))
 cyrillic_data <- incident_data %>% filter(lang %in% c("russian-koi8_r", "russian-windows1251", "bulgarian-iso8859_5", "ukrainian-koi8_r"))
 other_data <- incident_data %>% filter(lang %in% c("serbian-ascii", "hungarian", "malay", "croatian-ascii", "tagalog", "lithuanian", "hebrew-iso8859_8", "middle_frisian", "estonia", "turkish", "sanskrit", "albanian", "swahili"))
